@@ -36,7 +36,7 @@ public class GenerateCommand implements Runnable {
     @Option(names = {"-l", "--loop"}, description = "has loop or not", interactive = true, arity = "0..1")
     private Boolean hasLoop = true;
 
-    @Option(names = {"-p", "--path"}, description = "file dest path, default user home", interactive = true, arity = "0..1")
+    @Option(names = {"-p", "--path"}, description = "file dest path, default current path", interactive = true, arity = "0..1")
     private String destPath;
 
     public void run() {
